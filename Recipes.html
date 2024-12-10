@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=   , initial-scale=1.0">
+    <title>Recipes</title>
+
+    <!-- BOOTSTRAP CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"; rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background: url(Background.jpg)
+    }
+    h1 {
+        text-align: center;
+    }
+    h5 {
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
+    #divider {
+        border-bottom: solid;
+        border-bottom-color: orange;
+    }
+    .borders {
+        justify-content: center;
+        border: solid;
+        align-items: center;
+    }
+    #appetizer {
+        border-color: rgb(255, 213, 24);
+        border-width: 7px;
+        border-radius: 10px
+    }
+    #mains {
+        border-color: orange;
+        border-width: 7px;
+        border-radius: 10px
+    }
+    #dessert {
+        border-color: rgb(255, 81, 0);
+        border-width: 7px;
+        border-radius: 10px
+    }
+    img {
+        width: 275px;
+        height: 275px;
+        border-radius: 10px
+    }
+    .FoodCon {
+        border: solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+    .Apt {
+        border-color: rgb(255, 213, 24);
+    }
+    .Mns {
+        border-color: orange;
+    }
+    .Dst {
+        border-color: rgb(255, 81, 0);
+    }
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-sm" style="background-color: rgb(255, 213, 24);">
+
+        <div class="container-fluid">
+
+                <div class="collapse navbar-collapse justify-content-center">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item px-3"><a class="nav-link" href="index.html" style="color: black; font-size:larger;font-weight: bolder; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Main Page</a></li>
+                        <li class="nav-item px-3"><a class="nav-link" href="Recipes.html" style="color: white; font-size:larger;font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Recipes</a></li>
+                        <li class="nav-item px-3"><a class="nav-link" href="Submission.html" style="color: black; font-size:larger;font-weight: bolder; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Make Your Own</a></li>
+                        
+
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+
+
+    <h1 style="padding-top: 25px;font-weight: bolder;color: orange">Recipes</h1>
+    <h5 class="col-4 mx-auto d-block" style="padding-top:25px; padding-bottom: 22px;color: orange" id="divider">Only the Freshest Ingredients!</h5>
+    <br>
+    
+<div class="borders col-11 mx-auto d-block bg-light" id="appetizer">
+    <div class="container-fluid">
+    <h3 class="p-3">Appetizers</h3>
+        
+        <div class="container-fluid row bg-light">
+
+            <div class="col-3 FoodCon Apt bg-light" id="Tchip"><a href="Recipe_TChips.html"><div>
+                    <img src="TChips.jpg"><br>
+                    <label for="Tchip">Truffle Chips</label></div>
+            </a></div>
+
+            <div class="col-3 FoodCon Apt bg-light" id="Oring"><a href="Recipe_ORings.html"><div>
+                    <img src="ORings.webp"><br>
+                    <label for="Oring">Onion Rings</label></div>
+            </a></div>
+
+        </div>
+
+    </div>
+</div>
+<br><br><br>
+<div class="borders col-11 mx-auto d-block bg-light" id="mains">
+    <div class="container-fluid">
+    <h3 class="p-3">Mains</h3>
+
+        <div class="container-fluid row bg-light">
+
+            <div class="col-3 FoodCon Mns bg-light" id="Spght"><a href="Recipe_Spaghetti.html"><div>
+                    <img src="Spaghetti"><br>
+                    <label for="Spght">Spaghetti</label></div>
+            </a></div>
+
+            <div class="col-3 FoodCon Mns bg-light" id="Scegg"><a href="Recipe_ScEggs.html"><div>
+                    <img src="ScEggs.jpg"><br>
+                    <label for="Scegg">Scrambled Eggs</label></div>
+            </a></div>
+
+        </div>
+
+    </div>
+</div>
+<br><br><br>
+<div class="borders col-11 mx-auto d-block bg-light" id="dessert">
+    <div class="container-fluid">
+    <h3 class="p-3">Desserts</h3>
+
+        <div class="container-fluid row bg-light">
+
+            <div class="col-3 FoodCon Dst bg-light" id="IC"><a href="Recipe_IceCream.html"><div>
+                    <img src="IceCream.png"><br>
+                    <label for="IC">Ice Cream</label></div>
+            </a></div>
+
+        <div class="col-3 FoodCon Dst" id="Chsck bg-light"><a href="Recipe_Cheesecake.html"><div>
+                    <img src="Cheesecake.webp"><br>
+                    <label for="Chsck">Cheesecake</label></div>
+            </a></div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
